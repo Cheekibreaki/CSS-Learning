@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Demonstration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .product {
+            margin: 100px auto;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .product img {
+            display: block;
+            width: 97%;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        .product .review {
+            /* 不用padding top 是因为已经有height, 会撑开盒子。可以用 margin */
+            margin-top: 20px;
+            padding: 0 28px;
+            height: 80px;
+            font-size: 14px;
+            color: rgb(66, 65, 65);
+        }
+
+        .product .rating {
+            /* 不用padding top 是因为已经有height, 会撑开盒子。可以用 margin */
+            margin-top: 20px;
+            padding: 0 28px;
+            height: 20px;
+            font-size: 10px;
+            color: grey;
+        }
+        .product .info {
+            /* 不用padding top 是因为已经有height, 会撑开盒子。可以用 margin */
+            margin-top: 20px;
+            padding: 0 28px;
+            height: 10px;
+        }
+        .product .info h4{
+            font-weight:400;
+            display: inline-block;
+        }
+        .product .info span{
+            font-weight:200;
+            display: inline-block;
+            color:indianred;
+        }
+        .info em{
+            font-style: normal;
+            margin:0 6px 0 15px;
+            color:grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product">
+        <img src="images/product_Demonstration/Capture.PNG"> </img>
+        <p class="review">
+            这是一段演示文字，并没有实际含义。 我也不知道为什么拿bilibili的图。陈睿估计要来打我
+        </p>
+        <p class="rating">
+            bilibili垃圾的一批
+        </p>
+        <div class="info">
+            <h4><a href="#">Bilibili游戏展...</a></h4>
+            <em>|</em>
+            <span>$99</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>2019年9月9号</title>
+	<style>
+		.father {
+			width: 300px;
+			background-color: pink;
+			height: 60px;
+			/* padding-left: 30px; */
+			/*因为父盒子有宽度给定值了，则padding会撑开盒子*/
+		}
+
+		.son {
+			padding-top: 30px;
+			/* 子代盒子没有给定宽度,
+			用的是默认的,
+			所以padding是不会撑开盒子的 如果给定宽度的情况下，也会被padding撑开*/ 
+		}
+	</style>
+</head>
+
+<body>
+	<div class="father">
+		<div class="son">123</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .top{
+            height:90px;
+            
+            text-align: center;
+            background-color: gray;
+            margin: 20px 20px;
+        }
+        .banner{
+            height:300px;
+            
+            text-align: center;
+            background-color: gray;
+            margin: 20px 80px;
+        }
+        .box{
+            
+            
+            text-align: center;
+            background-color: gray;
+            margin: 20px 80px;
+        }
+        .footer{
+            height:300px;
+            text-align: center;
+            background-color: gray;
+            margin: 20px 20px;
+        }
+        .innerbox{
+            background-color: yellow;
+            width:324px;
+            height:400px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            float:left;
+        }
+        .innerboxFirst{
+            margin-left: 10px;
+        }
+        .clearfix:before,.clearfix:after{
+            content:"";
+            display: table;
+        }
+        .clearfix:after{
+            clear:both;
+        }
+        .clearfix{
+            *zoom:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box clearfix">
+        <div class="innerbox innerboxFirst"></div>
+        <div class="innerbox"></div>
+        <div class="innerbox"></div>
+        <div class="innerbox"></div>
+        <div class="innerbox innerboxFirst"></div>
+        <div class="innerbox"></div>
+        <div class="innerbox"></div>
+        <div class="innerbox"></div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
